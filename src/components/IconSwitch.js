@@ -3,9 +3,9 @@ import React from 'react';
 function IconSwitch({ icon, onSwitch }) {
   return (
     <div className="icon-switch">
-      <span className="material-icons" onClick={onSwitch}>
+      <button className="material-icons" onClick={onSwitch}>
         {icon}
-      </span>
+      </button>
     </div>
   );
 }

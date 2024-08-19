@@ -16,7 +16,7 @@ class Store extends Component {
     this.setState((prevState) => ({
       isListView: !prevState.isListView
     }));
-  }
+  };
 
   render() {
     const { isListView } = this.state;

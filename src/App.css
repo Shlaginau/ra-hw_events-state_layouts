@@ -12,9 +12,15 @@
 .icon-switch {
   text-align: right;
   padding: 10px;
-  cursor: pointer;
 }
 
+.material-icons {
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 24px;
+  display: inline-block;
+}
 
 .cards-view {
   display: flex;
