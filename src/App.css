@@ -1,0 +1,138 @@
+@import url('https://fonts.googleapis.com/icon?family=Material+Icons');
+@import url('https://fonts.googleapis.com/css?family=Roboto:400,500,700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Roboto Condensed Light', 'Helvetica Neue', 'Arial', sans-serif;
+  font-weight: 200;
+}
+
+.icon-switch {
+  text-align: right;
+  padding: 10px;
+  cursor: pointer;
+}
+
+
+.cards-view {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.shop-card {
+  flex: 0 1 calc(33.333% - 60px);
+  box-sizing: border-box;
+  margin: 30px;
+  padding: 20px;
+  background-color: #f5f5f5;
+  box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.3);
+  text-align: center;
+  border-radius: 8px;
+  position: relative;
+  height: 340px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.shop-card h3 {
+  text-transform: uppercase;
+  font-size: 18px;
+  margin-bottom: 10px;
+  color: black;
+}
+
+.shop-card {
+  font-size: 14px;
+  color: #888;
+  margin-bottom: 15px;
+}
+
+.shop-card img {
+  width: 100%;
+  height: auto;
+  max-height: 150px;
+  object-fit: contain;
+  margin-top: 10px;
+}
+
+.cardInfo {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  margin-top: 20px;
+}
+
+.price {
+  font-size: 16px;
+  font-weight: normal;
+  color:#e64a19;
+}
+
+.add-to-cart {
+  border: 1px solid #e64a19;
+  color:#e64a19;
+  font-weight: bold;
+  padding: 8px 8px;
+  margin:10px;
+  cursor: pointer;
+  border-radius: 30px;
+  text-transform: uppercase;
+}
+
+.add-to-cart:hover {
+  background-color: #a6a09e;
+}
+
+@media (max-width: 850px) {
+  .shop-card {
+    flex: 0 1 calc(50% - 60px);
+  }
+}
+
+@media (max-width: 600px) {
+  .shop-card {
+    flex: 0 1 calc(100% - 60px);
+  }
+}
+
+.list-view {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  padding: 20px;
+}
+
+.list-item {
+  display: flex;
+  align-items: center;
+  background-color: #f5f5f5;
+  margin-bottom: 5px;
+  border-radius: 8px;
+  justify-content: space-between;
+}
+
+.list-item img {
+  width: 120px;
+  height: auto;
+  margin-right: 20px;
+  object-fit: contain;
+}
+
+.list-item h3 {
+  font-size: 18px;
+  margin-bottom: 5px;
+  text-transform: uppercase;
+  color: black;
+}
+
+.list-item .color {
+  font-size: 14px;
+  color: #888;
+}
